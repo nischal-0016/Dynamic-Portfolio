@@ -57,7 +57,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 33rem;
 }
 
 .logo:hover {
@@ -75,6 +75,53 @@ a:hover {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+/* Existing Styles for Profile Section */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  justify-content: center;  /* Centers the image */
+  align-items: center;      /* Centers the image vertically */
+}
+
+.profile-img {
+  width: 100%;            /* Makes image fit within the container */
+  height: auto;           /* Maintains aspect ratio */
+  border-radius: 50%;     /* Makes the image round */
+  object-fit: cover;      /* Ensures the image fills the container and keeps its aspect ratio */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  /* Adds a soft shadow for better appearance */
 }
 
 .section__text {
@@ -206,3 +253,18 @@ article h3 {
 article p {
   font-size: 1rem;  
 }
+
+
+
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+

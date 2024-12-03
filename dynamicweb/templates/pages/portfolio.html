@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shesan Chettri</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
+<script>
+  window.onload = function() {
+      window.scrollTo(0, 0); 
+  };
+</script>
+
 
 <body>
   <nav id="desktop-nav">
-    <div class="logo">Shesan Chettri</div>
+    <div class="logo"><h1 class="title">{{ profiles.name }}</h1></div>
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -23,15 +29,19 @@
   </nav>
   <section id="profile">
     <div class="section__pic-container">
-      <img src="" />
-    </div>
+      {% if profiles.image %}
+        <img src="{{ profiles.image.url }}" alt="Profile Image" class="profile-img" />
+      {% else %}
+        <img src="{% static 'assets/default-profile.jpg' %}" alt="Default Profile Image" class="profile-img" />
+      {% endif %}
+    </div>    
     <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Shesan Chettri</h1>
-      <p class="section__text__p2">Full Stack Developer</p>
-      </div>
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">{{ profiles.name }}</h1>
+        <p class="section__text__p2">{{ profiles.title }}</p>
     </div>
   </section>
+
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
@@ -94,8 +104,17 @@
     </div>
   </section>
 
-  
+  <footer>
+    <nav>
+      <div="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div=>
+  </footer>
 
-  <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
