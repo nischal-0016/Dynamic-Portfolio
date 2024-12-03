@@ -141,13 +141,6 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.icon {
-  width: 50px; 
-  height: 50px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
 .section-container {
   max-width: 800px;
   margin: 0 auto; 
@@ -162,4 +155,54 @@ a:hover {
 .text-container p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+}
+
+.details-container {
+  width: 25rem; 
+  text-align: center;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem; 
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12rem; 
+  gap: 0.5rem;
+}
+
+article h3 {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+}
+
+article p {
+  font-size: 1rem;  
 }

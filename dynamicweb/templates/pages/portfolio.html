@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   {% load static %}
   <meta charset="UTF-8" />
@@ -16,7 +15,7 @@
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Skills</a></li>
         <li><a href="#projects">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -41,7 +40,6 @@
         <div class="about-containers">
           {% for detail in about_details %}
           <div class="details-container">
-            <img src="{{ detail.icon.url }}" alt="{{ detail.title }} icon" class="icon" />
             <h3>{{ detail.title }}</h3>
             <p>{{ detail.description }}</p>
           </div>
@@ -54,7 +52,50 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+        <!-- Frontend Skills -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              {% for skill in frontend_skills %}
+                  <article>
+                      <div>
+                          <h3>{{ skill.name }}</h3>
+                          <p>{{ skill.level }}</p>
+                      </div>
+                  </article>
+              {% empty %}
+                  <p>No frontend skills available.</p>
+              {% endfor %}
+            </div>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+              {% for skill in backend_skills %}
+                  <article>
+                      <div>
+                          <h3>{{ skill.name }}</h3>
+                          <p>{{ skill.level }}</p>
+                      </div>
+                  </article>
+              {% empty %}
+                  <p>No backend skills available.</p>
+              {% endfor %}
+          </div>
+      </div>
+    </div>
+  </section>
+
+  
+
   <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
