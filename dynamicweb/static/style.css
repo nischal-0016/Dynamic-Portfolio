@@ -99,7 +99,9 @@ a:hover {
   font-size: 3rem;
   text-align: center;
 }
-/* Existing Styles for Profile Section */
+
+
+/* Profile Section */
 #profile {
   display: flex;
   justify-content: center;
@@ -112,16 +114,16 @@ a:hover {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  justify-content: center;  /* Centers the image */
-  align-items: center;      /* Centers the image vertically */
+  justify-content: center; 
+  align-items: center;      
 }
 
 .profile-img {
-  width: 100%;            /* Makes image fit within the container */
-  height: auto;           /* Maintains aspect ratio */
-  border-radius: 50%;     /* Makes the image round */
-  object-fit: cover;      /* Ensures the image fills the container and keeps its aspect ratio */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  /* Adds a soft shadow for better appearance */
+  width: 100%;            
+  height: auto;          
+  border-radius: 50%;     
+  object-fit: cover;     
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
 }
 
 .section__text {
@@ -255,7 +257,7 @@ article p {
 }
 
 
-/* Projects Section Styling */
+/* Projects Section Styling
 #projects {
   padding: 4rem 0;
   background-color: #f4f4f4;
@@ -347,10 +349,10 @@ article p {
 .project-btn:hover {
   background-color: #3360d6;
   transform: scale(1.05);
-}
+} */
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .projects-container {
       flex-direction: column;
       align-items: center;
@@ -379,7 +381,7 @@ article p {
       padding: 0.6rem 1.2rem;
       font-size: 0.9rem;
   }
-}
+} */
 
 
 
