@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <script>
@@ -22,7 +22,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Skills</a></li>
-        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -104,13 +104,136 @@
     </div>
   </section>
 
+  <style>
+      /* Project Section */
+  #projects {
+    position: relative;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+
+  .projects-container {
+    border: 2px solid #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center; /* Center the container */
+    gap: 1.5rem;
+    background-color: #ffffff;
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .project-card {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 300px; /* Fixed width instead of percentage */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-image-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 1rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .btn-container {
+    margin-top: 0.5rem;
+  }
+
+  .project-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-btn:hover {
+    background-color: #444444;
+    color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .project-card {
+      width: 100%;
+    }
+  }
+    
+  </style>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+        {% for project in projects %}
+            <div class="project-card">
+                <div class="project-image-container">
+                    {% if project.image %}
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="project-img" />
+                    {% else %}
+                        <img src="{% static 'assets/default-project.jpg' %}" alt="Default Project Image" class="project-img" />
+                    {% endif %}
+                </div>
+                <h2 class="project-title">{{ project.title }}</h2>
+                <div class="btn-container">
+                    {% if project.live_demo_url %}
+                        <button class="btn project-btn demo-btn" onclick="location.href='{{ project.live_demo_url }}'">
+                            Live Demo
+                        </button>
+                    {% endif %}
+                </div>
+            </div>
+        {% empty %}
+            <p>No projects available at the moment.</p>
+        {% endfor %}
+    </div>
+  </section>
+
+
+
   <footer>
     <nav>
       <div="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div=>

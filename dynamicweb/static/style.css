@@ -255,6 +255,133 @@ article p {
 }
 
 
+/* Projects Section Styling */
+#projects {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  max-width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+.project-title {
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.project-btn {
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-btn:hover {
+  background-color: #3360d6;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-card {
+      width: 90%;
+      max-width: 400px;
+  }
+
+  .title {
+      font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__text__p1 {
+      font-size: 0.9rem;
+  }
+
+  .title {
+      font-size: 1.75rem;
+  }
+
+  .project-btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+  }
+}
+
+
 
 
 /* FOOTER SECTION */

@@ -47,3 +47,13 @@ class Skill(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.category})"
+    
+    
+class Projects(models.Model):
+    title = models.CharField(max_length=255)  
+    description = models.TextField(blank=True) 
+    image = models.ImageField(upload_to='projects/', null=True, blank=True)  
+    live_demo_url = models.URLField(blank=True, null=True)
+
+    def __str__(self):
+        return self.title
