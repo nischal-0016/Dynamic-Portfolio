@@ -9,19 +9,19 @@ def portfolio(request):
     frontend_skills = Skill.objects.filter(category='frontend')
     backend_skills = Skill.objects.filter(category='backend')
     projects = Projects.objects.all()
-    contact = Contact.objects.last()  # Retrieve the most recent contact instance
+    contact = Contact.objects.last()
 
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
+        name = request.POST.get('name', '').strip()
+        email = request.POST.get('email', '').strip()
+        message = request.POST.get('message', '').strip()
 
         if name and email and message:
             Contact.objects.create(name=name, email=email, message=message)
             messages.success(request, 'Your message has been sent successfully!')
             return redirect('portfolio')
         else:
-            messages.error(request, 'Please fill in all fields.')
+            messages.error(request, 'All fields are required. Please try again.')
 
     context = {
         'profiles': profiles,

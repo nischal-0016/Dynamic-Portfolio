@@ -64,7 +64,7 @@ class Contact(models.Model):
     message = models.TextField()
     facebook_url = models.URLField(max_length=200, blank=True, null=True)
     twitter_url = models.URLField(max_length=200, blank=True, null=True)
-    phone_number = models.URLField(max_length=15, blank=True, null=True )
+    phone_number = models.CharField(max_length=100,blank=True, null=True)
 
     def __str__(self):
         return self.name
