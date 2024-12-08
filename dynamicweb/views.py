@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Profile, AboutDetail, AboutMe, Skill, Projects, Contact
+from .models import Profile, AboutDetail, AboutMe, Skill, Projects, Contact,ContactMessage
 from django.contrib import messages
 
 def portfolio(request):
@@ -9,15 +9,14 @@ def portfolio(request):
     frontend_skills = Skill.objects.filter(category='frontend')
     backend_skills = Skill.objects.filter(category='backend')
     projects = Projects.objects.all()
-    contact = Contact.objects.last()
-
+    contact = Contact.objects.first()  
     if request.method == 'POST':
         name = request.POST.get('name', '').strip()
         email = request.POST.get('email', '').strip()
         message = request.POST.get('message', '').strip()
 
         if name and email and message:
-            Contact.objects.create(name=name, email=email, message=message)
+            ContactMessage.objects.create(name=name, email=email, message=message)
             messages.success(request, 'Your message has been sent successfully!')
             return redirect('portfolio')
         else:

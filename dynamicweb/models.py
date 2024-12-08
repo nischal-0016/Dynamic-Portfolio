@@ -58,13 +58,19 @@ class Projects(models.Model):
     def __str__(self):
         return self.title
     
-class Contact(models.Model):
+class ContactMessage(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()
-    facebook_url = models.URLField(max_length=200, blank=True, null=True)
-    twitter_url = models.URLField(max_length=200, blank=True, null=True)
-    phone_number = models.CharField(max_length=100,blank=True, null=True)
 
     def __str__(self):
         return self.name
+
+class Contact(models.Model):
+    facebook_url = models.URLField(max_length=200, blank=True, null=True)
+    twitter_url = models.URLField(max_length=200, blank=True, null=True)
+    phone_number = models.CharField(max_length=100, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+
+    def __str__(self):
+        return "Contact Details"
