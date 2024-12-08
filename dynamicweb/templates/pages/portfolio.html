@@ -13,8 +13,6 @@
       window.scrollTo(0, 0); 
   };
 </script>
-
-
 <body>
   <nav id="desktop-nav">
     <div class="logo"><h1 class="title">{{ profiles.name }}</h1></div>
@@ -68,7 +66,6 @@
     <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
         <div class="experience-details-container">
-          
         <!-- Frontend Skills -->
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
@@ -85,7 +82,6 @@
               {% endfor %}
             </div>
       </div>
-
       <!-- Backend Skills -->
       <div class="details-container">
           <h2 class="experience-sub-title">Backend Development</h2>
@@ -355,9 +351,6 @@
         gap: 15px;
     }
 }
-
-
-    
   </style>
 
   <section id="projects">
@@ -394,7 +387,6 @@
             <p class="section__text__p1">Get In Touch</p>
             <h1 class="title">Contact Me</h1>
         </div>
-
         <form method="post" action="{% url 'portfolio' %}" class="contact-form">
             {% csrf_token %}
             <div class="form-group">
@@ -408,7 +400,6 @@
             </div>
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
-
         {% if messages %}
             <div class="messages">
                 {% for message in messages %}
@@ -416,7 +407,6 @@
                 {% endfor %}
             </div>
         {% endif %}
-
         <div class="social-links">
             <p><b>Follow me: </b></p>
             <ul>
@@ -436,7 +426,6 @@
         </div>
     </section>
   </div>
-
   <footer>
     <nav>
       <div="nav-links-container">
@@ -448,6 +437,5 @@
         </ul>
       </div=>
   </footer>
-
 </body>
 </html>
