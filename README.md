@@ -4,19 +4,27 @@ students in this repo: nischal koirala, lakshya gurung
 Installation and Setup
 
 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/dynamic-portfolio.git
 cd dynamic-portfolio
+```
 
 2. Set up a Virtual Environment
+```bash
 python -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
+source env/bin/activate  # On Windows, use `env\Scripts\activate 
+```
 
 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 4. Apply Migrations
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 5. Run the Development Server
 py manage.py runserver
