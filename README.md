@@ -27,10 +27,14 @@ python manage.py migrate
 ```
 
 5. Run the Development Server
+```bash
 py manage.py runserver
+```
 
 6. Access the Site 
+```bash
 Open your browser and navigate to http://127.0.0.1:8000/.
+```
 
 The portfolio website is designed to dynamically fetch data from the database, making it easy to update content without touching the code. Here’s how a non-coder can manage the data:
 
