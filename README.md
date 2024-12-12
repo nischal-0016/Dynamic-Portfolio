@@ -3,7 +3,7 @@ Installation and Setup
 
 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/dynamic-portfolio.git
+git clone https://github.com/nischal-0016/Dynamic-Portfolio.git
 cd dynamic-portfolio
 ```
 
