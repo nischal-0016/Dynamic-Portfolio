@@ -1,6 +1,4 @@
 # portfolio-app
-students in this repo: nischal koirala, lakshya gurung
-
 Installation and Setup
 
 1. Clone the Repository
