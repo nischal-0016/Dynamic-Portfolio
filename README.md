@@ -10,7 +10,8 @@ cd dynamic-portfolio
 2. Set up a Virtual Environment
 ```bash
 python -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate 
+source env/bin/activate  # On Windows, use `env\Scripts\activate. On mac, use `source env/bin/activate
+
 ```
 
 3. Install Dependencies
@@ -20,16 +21,21 @@ pip install -r requirements.txt
 
 4. Apply Migrations
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+py manage.py makemigrations
+py manage.py migrate
 ```
 
-5. Run the Development Server
+5. Create a Superuser 
+``` bash
+py manage.py createsuperuser
+```
+
+6. Run the Development Server
 ```bash
 py manage.py runserver
 ```
 
-6. Access the Site 
+7. Access the Site 
 ```bash
 Open your browser and navigate to http://127.0.0.1:8000/.
 ```
