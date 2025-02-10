@@ -1,4 +1,4 @@
-# portfolio-app
+# Dynamic portfolio-app
 Installation and Setup
 
 1. Clone the Repository
