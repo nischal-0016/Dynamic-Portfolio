@@ -104,255 +104,255 @@
   </section>
 
   <style>
-      /* Project Section */
-  #projects {
-    position: relative;
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-  }
+    /* Project Section */
+    #projects {
+      position: relative;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+    }
 
-  .projects-container {
-    border: 2px solid #ffffff;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    display: flex;
-    justify-content: center; 
-    gap: 1.5rem;
-    background-color: #ffffff;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
-
-  .project-card {
-    background: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 300px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .project-image-container {
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-
-  .project-img {
-    width: 100%;
-    height: 250px; 
-    object-fit: cover; 
-    border-radius: 1rem;
-  }
-
-  .project-title {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    color: #333;
-    font-weight: bold;
-  }
-
-  .btn-container {
-    margin-top: 0.5rem;
-  }
-
-  .project-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 1rem;
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #000000;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .project-btn:hover {
-    background-color: #444444;
-    color: #ffffff;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  /* responsive Design */
-  @media (max-width: 768px) {
     .projects-container {
-      flex-wrap: wrap;
+      border: 2px solid #ffffff;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      display: flex;
+      justify-content: center; 
+      gap: 1.5rem;
+      background-color: #ffffff;
+      max-width: 1200px; 
+      margin: 0 auto; 
     }
-  }
 
-  @media (max-width: 480px) {
     .project-card {
-      width: 100%;
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 300px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-  }
 
-  {% comment %} contact Section {% endcomment %}
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
 
-  .contact-container {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #121111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
+    .project-image-container {
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
 
-.contact-section {
-    width: 100%;
-    max-width: 750px;
-    background-color: #f9f9f9;
-    padding: 60px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin: 0 20px; 
-}
+    .project-img {
+      width: 100%;
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 1rem;
+    }
 
-.section-header {
-    margin-bottom: 40px;
-    text-align: center;
-}
+    .project-title {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      color: #333;
+      font-weight: bold;
+    }
 
-.section__text__p1 {
-    color: #666;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
+    .btn-container {
+      margin-top: 0.5rem;
+    }
 
-.title {
-    color: #333;
-    font-weight: 700;
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-}
+    .project-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 1rem;
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #000000;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    .project-btn:hover {
+      background-color: #444444;
+      color: #ffffff;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.form-group {
-    width: 100%;
-}
+    /* responsive Design */
+    @media (max-width: 768px) {
+      .projects-container {
+        flex-wrap: wrap;
+      }
+    }
 
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+    @media (max-width: 480px) {
+      .project-card {
+        width: 100%;
+      }
+    }
 
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
-}
+    {% comment %} contact Section {% endcomment %}
 
-.submit-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-family: 'Poppins', sans-serif;
-    align-self: center;
-    margin-top: 15px;
-}
+    .contact-container {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #121111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
 
-.submit-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.messages {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.messages .success {
-    color: #fff;
-    background-color: #28a745;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.messages .error {
-    color: #fff;
-    background-color: #dc3545;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.social-links {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.social-links p {
-    color: #0a0a0a;
-    margin-bottom: 15px;
-}
-
-.social-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-links a {
-    color: #0b0b0b;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #007bff;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
     .contact-section {
-        padding: 40px 25px;
-        margin: 0 15px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 750px;
+        background-color: #f9f9f9;
+        padding: 60px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin: 0 20px; 
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .section__text__p1 {
+        color: #666;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
     }
 
     .title {
-        font-size: 2.2rem;
+        color: #333;
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-form input:focus, 
+    .contact-form textarea:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+
+    .submit-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-family: 'Poppins', sans-serif;
+        align-self: center;
+        margin-top: 15px;
+    }
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .messages {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .messages .success {
+        color: #fff;
+        background-color: #28a745;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .messages .error {
+        color: #fff;
+        background-color: #dc3545;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .social-links {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .social-links p {
+        color: #0a0a0a;
+        margin-bottom: 15px;
     }
 
     .social-links ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
-}
+
+    .social-links a {
+        color: #0b0b0b;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: #007bff;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .contact-section {
+            padding: 40px 25px;
+            margin: 0 15px;
+            max-width: 100%;
+        }
+
+        .title {
+            font-size: 2.2rem;
+        }
+
+        .social-links ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
   </style>
 
   <section id="projects">

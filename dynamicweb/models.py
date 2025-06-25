@@ -10,8 +10,8 @@ class Project(models.Model):
         return self.title
     
 class Profile(models.Model):
-    name = models.CharField(max_length=255)
-    title = models.CharField(max_length=255, default="Default Title") 
+    name = models.CharField(max_length=260)
+    title = models.CharField(max_length=255, default="Title") 
     image = models.ImageField(upload_to='profile_pics/')
 
     def __str__(self):
